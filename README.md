@@ -3,6 +3,7 @@
 An AI-powered image classification system that detects plant diseases from leaf images using Convolutional Neural Networks (CNN). This project aims to support smart agriculture by enabling early disease identification.
 
 📌 Overview
+
 Plant diseases significantly reduce agricultural productivity. Early detection helps farmers take preventive measures and improve crop yield.
 This project uses:
 Deep Learning (CNN)
@@ -12,6 +13,7 @@ Model evaluation & visualization
 The trained model can classify plant leaves into healthy or diseased categories.
 
 🧠 Technologies Used
+
 Python
 TensorFlow / Keras
 NumPy
@@ -22,6 +24,7 @@ OpenCV
 Scikit-learn
 
 📊 Dataset
+
 The dataset contains labeled images of plant leaves categorized into multiple classes such as:
 Healthy
 Early Blight
@@ -33,12 +36,15 @@ And more...
 The images are preprocessed and resized to ensure uniform input for the CNN model.
 
 🏋️ Model Training
+
 The CNN model is trained using:
 Optimizer: Adam
 Loss Function: Categorical Crossentropy
 Metric: Accuracy
 Epochs: 30 (or as configured)
+
 Example:
+
 Python:
 model.compile(
     optimizer='adam',
@@ -54,6 +60,7 @@ history = model.fit(
 
 
 📈 Model Evaluation
+
 The model performance is evaluated using:
 Training & Validation Accuracy
 Loss Curves
@@ -62,6 +69,7 @@ Classification Report
 (Add your final accuracy here if available, e.g., Model achieved 94% validation accuracy)
 
 🔍 Prediction on New Images
+
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import numpy as np
@@ -76,6 +84,7 @@ prediction = model.predict(img_array)
 print("Predicted Class:", prediction)
 
 🚀 Future Improvements
+
 🌐 Deploy as Web App (Flask / Streamlit)
 📱 Mobile App Integration
 🎥 Real-time Detection via Camera
